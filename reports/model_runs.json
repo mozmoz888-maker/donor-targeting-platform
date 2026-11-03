@@ -1,0 +1,125 @@
+{
+  "holdout_from": "2026-08-01",
+  "features": [
+    "centroid_cosine_similarity",
+    "eng_events_30d",
+    "days_since_eng",
+    "sends_30d",
+    "tenure_days",
+    "prior_donations",
+    "prior_amount",
+    "was_null_sim"
+  ],
+  "targets": {
+    "donated": {
+      "base_rate_holdout": 0.013308208691555764,
+      "models": [
+        {
+          "model": "logistic (baseline)",
+          "roc_auc": 0.6186873754903806,
+          "average_precision": 0.025605700367436143,
+          "top75%_donations_kept": 0.8230088495575221,
+          "top50%_donations_kept": 0.6637168141592921,
+          "top25%_donations_kept": 0.415929203539823
+        },
+        {
+          "model": "random_forest",
+          "roc_auc": 0.6152549766877853,
+          "average_precision": 0.023503711639046486,
+          "top75%_donations_kept": 0.8584070796460177,
+          "top50%_donations_kept": 0.6460176991150443,
+          "top25%_donations_kept": 0.4424778761061947,
+          "feature_importances": {
+            "centroid_cosine_similarity": 0.3202,
+            "eng_events_30d": 0.0584,
+            "days_since_eng": 0.2153,
+            "sends_30d": 0.0584,
+            "tenure_days": 0.2347,
+            "prior_donations": 0.0247,
+            "prior_amount": 0.0865
+          }
+        },
+        {
+          "model": "extra_trees",
+          "roc_auc": 0.6236598381348538,
+          "average_precision": 0.02564615387825396,
+          "top75%_donations_kept": 0.8495575221238938,
+          "top50%_donations_kept": 0.672566371681416,
+          "top25%_donations_kept": 0.415929203539823,
+          "feature_importances": {
+            "centroid_cosine_similarity": 0.4843,
+            "eng_events_30d": 0.086,
+            "days_since_eng": 0.0904,
+            "sends_30d": 0.0751,
+            "tenure_days": 0.1076,
+            "prior_donations": 0.0876,
+            "prior_amount": 0.0501
+          }
+        },
+        {
+          "model": "hist_gradient_boosting",
+          "roc_auc": 0.6296067238891577,
+          "average_precision": 0.020328988044141637,
+          "top75%_donations_kept": 0.8849557522123894,
+          "top50%_donations_kept": 0.672566371681416,
+          "top25%_donations_kept": 0.40707964601769914
+        }
+      ]
+    },
+    "unsubscribed": {
+      "base_rate_holdout": 0.013425980449888117,
+      "models": [
+        {
+          "model": "logistic (baseline)",
+          "roc_auc": 0.5061718699278936,
+          "average_precision": 0.014555820528426681,
+          "top75%_unsubs_caused": 0.7456140350877193,
+          "top50%_unsubs_caused": 0.5263157894736842,
+          "top25%_unsubs_caused": 0.2543859649122807
+        },
+        {
+          "model": "random_forest",
+          "roc_auc": 0.5473738662042477,
+          "average_precision": 0.014812460489563478,
+          "top75%_unsubs_caused": 0.8245614035087719,
+          "top50%_unsubs_caused": 0.5614035087719298,
+          "top25%_unsubs_caused": 0.3157894736842105,
+          "feature_importances": {
+            "centroid_cosine_similarity": 0.2268,
+            "eng_events_30d": 0.0527,
+            "days_since_eng": 0.2529,
+            "sends_30d": 0.0668,
+            "tenure_days": 0.2896,
+            "prior_donations": 0.0133,
+            "prior_amount": 0.094
+          }
+        },
+        {
+          "model": "extra_trees",
+          "roc_auc": 0.53895587123473,
+          "average_precision": 0.015498342197036462,
+          "top75%_unsubs_caused": 0.7894736842105263,
+          "top50%_unsubs_caused": 0.5526315789473685,
+          "top25%_unsubs_caused": 0.30701754385964913,
+          "feature_importances": {
+            "centroid_cosine_similarity": 0.1756,
+            "eng_events_30d": 0.0936,
+            "days_since_eng": 0.1714,
+            "sends_30d": 0.146,
+            "tenure_days": 0.26,
+            "prior_donations": 0.0659,
+            "prior_amount": 0.0745
+          }
+        },
+        {
+          "model": "hist_gradient_boosting",
+          "roc_auc": 0.5672036423875733,
+          "average_precision": 0.01783997068699667,
+          "top75%_unsubs_caused": 0.7807017543859649,
+          "top50%_unsubs_caused": 0.5789473684210527,
+          "top25%_unsubs_caused": 0.34210526315789475
+        }
+      ]
+    }
+  }
+}

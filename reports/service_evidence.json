@@ -1,0 +1,181 @@
+{
+  "scenarios": [
+    {
+      "name": "A: replay 12 requests (normal)",
+      "requests": [
+        {
+          "request_id": "req_2001",
+          "program_area": "disaster_relief",
+          "mailed": 191444,
+          "suppressed": 52613,
+          "total_s": 2.44,
+          "score_s": 0.329,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2002",
+          "program_area": "hunger_relief",
+          "mailed": 191476,
+          "suppressed": 52581,
+          "total_s": 2.41,
+          "score_s": 0.304,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2003",
+          "program_area": "clean_water",
+          "mailed": 191441,
+          "suppressed": 52616,
+          "total_s": 2.42,
+          "score_s": 0.316,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2004",
+          "program_area": "education",
+          "mailed": 191384,
+          "suppressed": 52673,
+          "total_s": 2.41,
+          "score_s": 0.308,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2005",
+          "program_area": "child_health",
+          "mailed": 191424,
+          "suppressed": 52633,
+          "total_s": 2.42,
+          "score_s": 0.311,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2006",
+          "program_area": "maternal_health",
+          "mailed": 191414,
+          "suppressed": 52643,
+          "total_s": 2.41,
+          "score_s": 0.308,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2007",
+          "program_area": "refugee_support",
+          "mailed": 191406,
+          "suppressed": 52651,
+          "total_s": 2.41,
+          "score_s": 0.308,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2008",
+          "program_area": "climate_resilience",
+          "mailed": 191281,
+          "suppressed": 52776,
+          "total_s": 2.47,
+          "score_s": 0.363,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2009",
+          "program_area": "mental_health",
+          "mailed": 191394,
+          "suppressed": 52663,
+          "total_s": 2.42,
+          "score_s": 0.312,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2010",
+          "program_area": "housing",
+          "mailed": 191425,
+          "suppressed": 52632,
+          "total_s": 2.44,
+          "score_s": 0.329,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2011",
+          "program_area": "economic_empowerment",
+          "mailed": 191357,
+          "suppressed": 52700,
+          "total_s": 2.42,
+          "score_s": 0.316,
+          "attempts": 1
+        },
+        {
+          "request_id": "req_2012",
+          "program_area": "medical_research",
+          "mailed": 191402,
+          "suppressed": 52655,
+          "total_s": 2.42,
+          "score_s": 0.32,
+          "attempts": 1
+        }
+      ],
+      "wall_seconds": 30.4,
+      "worst_request_s": 2.47,
+      "peak_rss_mb": 1145.2
+    },
+    {
+      "name": "B: CRM fails twice then recovers",
+      "attempts": 3,
+      "retry_waits": [
+        10.0,
+        20.0
+      ],
+      "wall_seconds": 32.5,
+      "status": "sent",
+      "peak_rss_mb": 1145.2
+    },
+    {
+      "name": "C: CRM permanently down",
+      "wall_seconds": 150.5,
+      "status": "failed",
+      "audience_persisted": true,
+      "attempts": 5,
+      "status_endpoint_status": "failed",
+      "peak_rss_mb": 1145.2
+    }
+  ],
+  "assertions": [
+    {
+      "check": "12/12 requests sent, one CRM list each, no duplicate person ids",
+      "pass": true
+    },
+    {
+      "check": "worst request\u2192CRM wall time 2.5s < 180s SLA",
+      "pass": true
+    },
+    {
+      "check": "transient CRM failure recovered: attempts=3, waits 10s+20s, done in 32s",
+      "pass": true
+    },
+    {
+      "check": "permanent CRM failure: graceful FAILED in 150s (< SLA), audience persisted=True, status endpoint shows terminal state",
+      "pass": true
+    },
+    {
+      "check": "duplicate request_id -> 409 with prior list_id (no second CRM list)",
+      "pass": true
+    },
+    {
+      "check": "bad program_area / wrong embedding length -> 422 fail-fast",
+      "pass": true
+    },
+    {
+      "check": "peak RSS 1145.2 MB < 2048 MB worker limit",
+      "pass": true
+    }
+  ],
+  "health": {
+    "ok": true,
+    "active_people": 244057,
+    "with_centroid": 182161,
+    "artifacts_built_at": "2026-10-15T15:47:26.070214+00:00",
+    "artifact_age_hours": 0.1,
+    "snapshot_at": "2026-09-01T05:00:00+00:00",
+    "staleness_ok": true
+  },
+  "memory_limit_mb": 2048,
+  "peak_rss_all_mb": 1145.2
+}

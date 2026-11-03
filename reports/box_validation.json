@@ -1,0 +1,190 @@
+{
+  "repeat_donors": 23911,
+  "personal_gap_quartiles": [
+    5.0,
+    10.0,
+    16.0
+  ],
+  "sends_with_history": 1696234,
+  "overall_conversion_with_history": 0.014857030338974458,
+  "hazard_by_k": [
+    {
+      "k_since_last_gift": 0,
+      "sends": 127302,
+      "conversion": 0.013966787638843067
+    },
+    {
+      "k_since_last_gift": 1,
+      "sends": 120285,
+      "conversion": 0.015903894916240596
+    },
+    {
+      "k_since_last_gift": 2,
+      "sends": 112436,
+      "conversion": 0.015946849763420968
+    },
+    {
+      "k_since_last_gift": 3,
+      "sends": 105106,
+      "conversion": 0.01517515650866744
+    },
+    {
+      "k_since_last_gift": 4,
+      "sends": 98280,
+      "conversion": 0.013196988196988196
+    },
+    {
+      "k_since_last_gift": 5,
+      "sends": 92083,
+      "conversion": 0.013259776505978302
+    },
+    {
+      "k_since_last_gift": 6,
+      "sends": 86359,
+      "conversion": 0.015076598848990841
+    },
+    {
+      "k_since_last_gift": 7,
+      "sends": 80850,
+      "conversion": 0.015213358070500928
+    },
+    {
+      "k_since_last_gift": 8,
+      "sends": 75817,
+      "conversion": 0.015286809026999222
+    },
+    {
+      "k_since_last_gift": 9,
+      "sends": 70884,
+      "conversion": 0.014982224479431183
+    },
+    {
+      "k_since_last_gift": 10,
+      "sends": 66113,
+      "conversion": 0.015322251297021765
+    },
+    {
+      "k_since_last_gift": 11,
+      "sends": 61380,
+      "conversion": 0.01502117953730857
+    },
+    {
+      "k_since_last_gift": 12,
+      "sends": 56872,
+      "conversion": 0.014559009706006472
+    },
+    {
+      "k_since_last_gift": 13,
+      "sends": 52727,
+      "conversion": 0.015456976501602595
+    },
+    {
+      "k_since_last_gift": 14,
+      "sends": 48806,
+      "conversion": 0.015305495225996803
+    },
+    {
+      "k_since_last_gift": 15,
+      "sends": 45148,
+      "conversion": 0.01486223088508904
+    },
+    {
+      "k_since_last_gift": 16,
+      "sends": 41704,
+      "conversion": 0.013308075963936314
+    },
+    {
+      "k_since_last_gift": 17,
+      "sends": 38500,
+      "conversion": 0.012961038961038961
+    },
+    {
+      "k_since_last_gift": 18,
+      "sends": 35442,
+      "conversion": 0.01292252130240957
+    },
+    {
+      "k_since_last_gift": 19,
+      "sends": 32512,
+      "conversion": 0.014210137795275591
+    },
+    {
+      "k_since_last_gift": 20,
+      "sends": 29778,
+      "conversion": 0.014373027066962188
+    },
+    {
+      "k_since_last_gift": 21,
+      "sends": 27231,
+      "conversion": 0.013881238294590724
+    },
+    {
+      "k_since_last_gift": 22,
+      "sends": 24904,
+      "conversion": 0.016302601991647927
+    },
+    {
+      "k_since_last_gift": 23,
+      "sends": 22654,
+      "conversion": 0.017745210558841706
+    },
+    {
+      "k_since_last_gift": 24,
+      "sends": 20515,
+      "conversion": 0.017255666585425298
+    },
+    {
+      "k_since_last_gift": 25,
+      "sends": 18500,
+      "conversion": 0.01816216216216216
+    },
+    {
+      "k_since_last_gift": 26,
+      "sends": 104046,
+      "conversion": 0.015156757587989927
+    }
+  ],
+  "alignment_table": [
+    {
+      "alignment": "<= -3 (early)",
+      "sends": 361073,
+      "conversion": 0.008978793761926259
+    },
+    {
+      "alignment": "-2",
+      "sends": 31933,
+      "conversion": 0.028685059342999406
+    },
+    {
+      "alignment": "-1",
+      "sends": 32894,
+      "conversion": 0.4875053201191707
+    },
+    {
+      "alignment": "0 (on slot)",
+      "sends": 12083,
+      "conversion": 0.033600926922121986
+    },
+    {
+      "alignment": "+1",
+      "sends": 10867,
+      "conversion": 0.028710775743075366
+    },
+    {
+      "alignment": "+2",
+      "sends": 9817,
+      "conversion": 0.02780890292350005
+    },
+    {
+      "alignment": "+3",
+      "sends": 8883,
+      "conversion": 0.02634245187436677
+    },
+    {
+      "alignment": ">= +4 (late)",
+      "sends": 98005,
+      "conversion": 0.0385898678638845
+    }
+  ],
+  "on_slot_vs_late_lift": 0.871
+}

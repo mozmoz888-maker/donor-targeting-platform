@@ -1,0 +1,243 @@
+{
+  "overall": {
+    "sends": 9592669,
+    "people": 387751,
+    "emails": 52,
+    "unsubscribed": 144627,
+    "unsub_rate": 0.015076825855244249
+  },
+  "overall_sample": {
+    "sample_sends": 60000,
+    "unsub_rate": 0.01485,
+    "donation_rate": 0.0115,
+    "median_gift": 45.5
+  },
+  "opened_this_email_when_unsubscribed": 0.13494022554571414,
+  "by_program_area": [
+    {
+      "program_area": "economic_empowerment",
+      "sends": 368130,
+      "unsub_rate": 0.019425203053269224
+    },
+    {
+      "program_area": "clean_water",
+      "sends": 734580,
+      "unsub_rate": 0.016529173132946717
+    },
+    {
+      "program_area": "housing",
+      "sends": 556321,
+      "unsub_rate": 0.016443743809778887
+    },
+    {
+      "program_area": "refugee_support",
+      "sends": 555414,
+      "unsub_rate": 0.016321158631219235
+    },
+    {
+      "program_area": "education",
+      "sends": 1109286,
+      "unsub_rate": 0.016134702862922637
+    },
+    {
+      "program_area": "mental_health",
+      "sends": 924697,
+      "unsub_rate": 0.015832213146576662
+    },
+    {
+      "program_area": "maternal_health",
+      "sends": 550075,
+      "unsub_rate": 0.015605144752988229
+    },
+    {
+      "program_area": "child_health",
+      "sends": 923827,
+      "unsub_rate": 0.014933531927514567
+    },
+    {
+      "program_area": "medical_research",
+      "sends": 558723,
+      "unsub_rate": 0.01486067335692284
+    },
+    {
+      "program_area": "climate_resilience",
+      "sends": 1102151,
+      "unsub_rate": 0.014711232852848657
+    },
+    {
+      "program_area": "disaster_relief",
+      "sends": 1286829,
+      "unsub_rate": 0.012868842713367511
+    },
+    {
+      "program_area": "hunger_relief",
+      "sends": 922636,
+      "unsub_rate": 0.012058926814041507
+    }
+  ],
+  "by_tenure": [
+    {
+      "tenure": "<30d",
+      "sends": 809283,
+      "unsub_rate": 0.015248065262707854
+    },
+    {
+      "tenure": "30-90d",
+      "sends": 1159624,
+      "unsub_rate": 0.015235973039536953
+    },
+    {
+      "tenure": "180d+",
+      "sends": 6678714,
+      "unsub_rate": 0.015038673612914102
+    },
+    {
+      "tenure": "90-180d",
+      "sends": 945048,
+      "unsub_rate": 0.015004528870491234
+    }
+  ],
+  "by_engagement_30d": [
+    {
+      "engagement": "none",
+      "sends": 15033,
+      "unsub_rate": 0.015499235016297479
+    },
+    {
+      "engagement": "1-2",
+      "sends": 27369,
+      "unsub_rate": 0.014907376959333552
+    },
+    {
+      "engagement": "3-5",
+      "sends": 15688,
+      "unsub_rate": 0.014342172361040285
+    },
+    {
+      "engagement": "6+",
+      "sends": 1910,
+      "unsub_rate": 0.013089005235602094
+    }
+  ],
+  "by_frequency_30d": [
+    {
+      "freq": "6-8",
+      "sends": 38563,
+      "unsub_rate": 0.015066255218732982
+    },
+    {
+      "freq": "<=5",
+      "sends": 20473,
+      "unsub_rate": 0.014653446002051483
+    },
+    {
+      "freq": "9-10",
+      "sends": 964,
+      "unsub_rate": 0.01037344398340249
+    }
+  ],
+  "by_prior_donor": [
+    {
+      "prior_donor": true,
+      "sends": 11804,
+      "unsub_rate": 0.015418502202643172
+    },
+    {
+      "prior_donor": false,
+      "sends": 48196,
+      "unsub_rate": 0.014710764378786621
+    }
+  ],
+  "by_similarity_decile": [
+    {
+      "sim_decile": 2,
+      "sends": 4511,
+      "unsub_rate": 0.019729549988915983,
+      "donation_rate": 0.00509864774994458
+    },
+    {
+      "sim_decile": 6,
+      "sends": 4497,
+      "unsub_rate": 0.018679119412941963,
+      "donation_rate": 0.009784300644874361
+    },
+    {
+      "sim_decile": 3,
+      "sends": 4480,
+      "unsub_rate": 0.017857142857142856,
+      "donation_rate": 0.005803571428571429
+    },
+    {
+      "sim_decile": 1,
+      "sends": 4501,
+      "unsub_rate": 0.016885136636303043,
+      "donation_rate": 0.006443012663852477
+    },
+    {
+      "sim_decile": 4,
+      "sends": 4507,
+      "unsub_rate": 0.016418903927224317,
+      "donation_rate": 0.0071000665631240295
+    },
+    {
+      "sim_decile": 5,
+      "sends": 4485,
+      "unsub_rate": 0.012709030100334449,
+      "donation_rate": 0.007803790412486065
+    },
+    {
+      "sim_decile": 7,
+      "sends": 4497,
+      "unsub_rate": 0.012675116744496331,
+      "donation_rate": 0.014454080498109851
+    },
+    {
+      "sim_decile": 8,
+      "sends": 4502,
+      "unsub_rate": 0.011550422034651266,
+      "donation_rate": 0.011994669035984007
+    },
+    {
+      "sim_decile": 10,
+      "sends": 4497,
+      "unsub_rate": 0.01089615299088281,
+      "donation_rate": 0.035134534133867024
+    },
+    {
+      "sim_decile": 9,
+      "sends": 4490,
+      "unsub_rate": 0.008908685968819599,
+      "donation_rate": 0.018708240534521157
+    }
+  ],
+  "policy_simulation": [
+    {
+      "policy": "BAU: random 75%",
+      "emailed": 0.75,
+      "unsub_caused": 0.75,
+      "donations_kept": 0.75,
+      "dollars_kept": 0.75
+    },
+    {
+      "policy": "centroid top 75%",
+      "emailed": 0.7499944403673805,
+      "unsub_caused": 0.6869300911854104,
+      "donations_kept": 0.8854545454545455,
+      "dollars_kept": 0.8833317333845317
+    },
+    {
+      "policy": "centroid top 50%",
+      "emailed": 0.49998888073476105,
+      "unsub_caused": 0.42857142857142855,
+      "donations_kept": 0.7363636363636363,
+      "dollars_kept": 0.7316885859652491
+    },
+    {
+      "policy": "centroid top 25%",
+      "emailed": 0.24998332110214158,
+      "unsub_caused": 0.1717325227963526,
+      "donations_kept": 0.48727272727272725,
+      "dollars_kept": 0.5004959841285079
+    }
+  ]
+}

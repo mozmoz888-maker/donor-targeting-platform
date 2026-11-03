@@ -1,0 +1,114 @@
+{
+  "data_check": {
+    "transactions": 131332,
+    "total_donated_usd": 7609868.0,
+    "share_tx_persons_known": 1.0,
+    "share_attributed_to_email": 0.8135412542259313,
+    "givers": 100110,
+    "share_givers_with_2plus_gifts": 0.24119468584556988,
+    "share_givers_with_an_attributed_gift": 0.8513635001498352,
+    "people_total": 391750,
+    "people_with_sends": 387751,
+    "max_gifts_per_person": 9
+  },
+  "cadence": {
+    "givers": 100104,
+    "gifts_per_send_among_givers": {
+      "median": 0.034482758620689655,
+      "q25": 0.02631578947368421,
+      "q75": 0.05714285714285714
+    },
+    "median_emails_between_gifts": 9.0,
+    "emails_between_gifts_quartiles": [
+      4.0,
+      9.0,
+      16.0
+    ],
+    "first_gift_after_n_non_giving_sends": {
+      "median": 13.0,
+      "share_at_5plus": 0.7991388955486294,
+      "share_at_10plus": 0.6048010069527692,
+      "share_at_20plus": 0.32572124990010387
+    }
+  },
+  "ltv": {
+    "ever_gave_share": 0.25816567848954614,
+    "mean_gifts_per_giver_6mo": 1.311895628546312,
+    "mean_gift_usd": 57.94374562178296,
+    "median_gift_usd": 45.0,
+    "expected_6mo_value_per_subscriber_usd": 19.62
+  },
+  "ladder": [
+    {
+      "rung": "never gave",
+      "sends": 48196,
+      "donation_rate": 0.010436550751099677,
+      "unsub_rate": 0.014710764378786621,
+      "mean_similarity": 0.11275167018175125,
+      "mean_eng_events_30d": 1.6574612000995934
+    },
+    {
+      "rung": "0-1",
+      "sends": 1543,
+      "donation_rate": 0.011665586519766688,
+      "unsub_rate": 0.016202203499675955,
+      "mean_similarity": 0.12823253870010376,
+      "mean_eng_events_30d": 3.225534672715489
+    },
+    {
+      "rung": "2-3",
+      "sends": 1467,
+      "donation_rate": 0.014314928425357873,
+      "unsub_rate": 0.011588275391956374,
+      "mean_similarity": 0.13097995519638062,
+      "mean_eng_events_30d": 3.2079072937968642
+    },
+    {
+      "rung": "4-5",
+      "sends": 1316,
+      "donation_rate": 0.015957446808510637,
+      "unsub_rate": 0.0182370820668693,
+      "mean_similarity": 0.11284925788640976,
+      "mean_eng_events_30d": 2.977203647416413
+    },
+    {
+      "rung": "6-10",
+      "sends": 2844,
+      "donation_rate": 0.017229254571026722,
+      "unsub_rate": 0.015119549929676512,
+      "mean_similarity": 0.11790946871042252,
+      "mean_eng_events_30d": 2.228902953586498
+    },
+    {
+      "rung": "10+",
+      "sends": 4634,
+      "donation_rate": 0.01683211048769961,
+      "unsub_rate": 0.015753129046180404,
+      "mean_similarity": 0.11557023972272873,
+      "mean_eng_events_30d": 2.0386275356063877
+    }
+  ],
+  "suppression": [
+    {
+      "k": 3,
+      "sends_suppressed": 0.9498333333333333,
+      "donations_lost": 0.9434782608695652,
+      "first_gifts_lost": 1.0,
+      "unsubs_avoided": 0.9528619528619529
+    },
+    {
+      "k": 5,
+      "sends_suppressed": 0.9279,
+      "donations_lost": 0.9130434782608695,
+      "first_gifts_lost": 1.0,
+      "unsubs_avoided": 0.9259259259259259
+    },
+    {
+      "k": 10,
+      "sends_suppressed": 0.8805,
+      "donations_lost": 0.8420289855072464,
+      "first_gifts_lost": 1.0,
+      "unsubs_avoided": 0.877665544332211
+    }
+  ]
+}
