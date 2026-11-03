@@ -1,0 +1,13 @@
+services:
+  targeting:
+    build: .
+    mem_limit: 2g          # the Render background worker's hard limit
+    cpus: 4.0
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data   # warehouse snapshot + scoring artifacts
+      - ./models:/app/models
+    environment:
+      LTV_USD: "19.62"     # the business dial: measured 6-month value per subscriber
+    restart: unless-stopped
